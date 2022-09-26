@@ -1,0 +1,7 @@
+<section>
+    <button (click)="killEveryone()">Matar a todos</button>
+    <button (click)="reviveEveryone()">Revivid a todos</button>
+</section>
+<section class="character__container">
+    <app-character-card *ngFor="let c of characters" [character]="c"></app-character-card>
+</section>

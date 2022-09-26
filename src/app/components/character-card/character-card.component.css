@@ -1,0 +1,13 @@
+
+.status--alive{
+    color: darkgreen;
+}
+
+.status--dead{
+    color: darkred;
+}
+
+
+.status--unknown{
+    color: darkgrey;
+}

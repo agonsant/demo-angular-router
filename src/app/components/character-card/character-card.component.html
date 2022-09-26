@@ -1,0 +1,14 @@
+<article>
+    <div>
+        <img alt="" src="{{character.image}}">
+    </div>
+    <div>
+        <h3>{{character.name}}</h3>
+        <p [ngClass]="{
+                'status--alive': character.status=== 'Alive',
+                'status--dead': character.status=== 'Dead' ,
+                'status--unknown': character.status=== 'unknown'
+        }">{{character.status}}-{{character.species}}</p>
+        <p>{{character.firstSeen}}</p>
+    </div>
+</article>
