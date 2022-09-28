@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { catchError, forkJoin, map, Observable, switchMap, withLatestFrom, tap, of } from 'rxjs';
+import { catchError, forkJoin, map, Observable, switchMap, withLatestFrom, of } from 'rxjs';
 import { Character, CharactersResponse } from '../models/characters.model';
 import { EpisodeResponse } from '../models/episodes.model';
 

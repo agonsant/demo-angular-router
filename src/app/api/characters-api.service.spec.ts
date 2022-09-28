@@ -80,7 +80,6 @@ describe('CharactersApiService', () => {
     
     const req_char = httpTestingController.match('https://rickandmortyapi.com/api/character');
     req_char.forEach(r => r.flush(testCharacters));
-    // expect(req_char.request.method).toEqual('GET');
     
     const req_episodes = httpTestingController.expectOne('https://rickandmortyapi.com/api/episode/1');
     expect(req_episodes.request.method).toEqual('GET');
